@@ -1,0 +1,21 @@
+{
+  "name": "node-raw-loader",
+  "version": "1.0.0",
+  "description": "Import any file as a string into NodeJS",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juona/node-raw-loader.git"
+  },
+  "keywords": [
+    "nodejs",
+    "raw",
+    "loader"
+  ],
+  "author": "juona",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juona/node-raw-loader/issues"
+  },
+  "homepage": "https://github.com/juona/node-raw-loader#readme"
+}
