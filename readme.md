@@ -8,25 +8,25 @@ I later realized that I could use this code to import just about any file as a r
 
 Pass the extensions of the files you wish to raw-import to the utility function:
 
-  require("node-raw-loader")(".graphql", ".gql", ".svg");
+	require("node-raw-loader")(".graphql", ".gql", ".svg");
 
 or:
 
-  import rawLoader from "./raw-file-loader";
-  rawLoader(".graphql", ".gql", ".svg");
+	import rawLoader from "./raw-file-loader";
+	rawLoader(".graphql", ".gql", ".svg");
 
 Say you have a `.graphql` file like this:
 
-  type Product {
-    title: String!
-    price: NonNegativeInt!
-  }
+	type Product {
+	  title: String!
+	  price: NonNegativeInt!
+	}
 
-  extend type Query {
-    product(productID: ID!): Product
-  }
+	extend type Query {
+	  product(productID: ID!): Product
+	}
 
 You can now import it as a string into your NodeJS code:
 
-  import schema from "./product.schema.graphql"; // imports the schema as a string
-  console.log(schema); // prints the schema
+	import schema from "./product.schema.graphql"; // imports the schema as a string
+	console.log(schema); // prints the schema
